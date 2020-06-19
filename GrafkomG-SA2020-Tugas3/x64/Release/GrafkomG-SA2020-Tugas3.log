@@ -1,0 +1,4 @@
+﻿  GrafkomG-SA2020-Tugas3.cpp
+C:\Users\MrPaung\source\repos\GrafkomG-SA2020-Tugas3\GrafkomG-SA2020-Tugas3\GrafkomG-SA2020-Tugas3.cpp(41,29): error C2664: 'void glutKeyboardFunc(void (__cdecl *)(unsigned char,int,int))': cannot convert argument 1 from 'void (__cdecl *)(unsigned char,int,int,int)' to 'void (__cdecl *)(unsigned char,int,int)'
+C:\Users\MrPaung\source\repos\GrafkomG-SA2020-Tugas3\GrafkomG-SA2020-Tugas3\GrafkomG-SA2020-Tugas3.cpp(41,19): message : None of the functions with this name in scope match the target type
+C:\Users\MrPaung\source\repos\GrafkomG-SA2020-Tugas3\GrafkomG-SA2020-Tugas3\include\GL\freeglut_std.h(491,26): message : see declaration of 'glutKeyboardFunc'
