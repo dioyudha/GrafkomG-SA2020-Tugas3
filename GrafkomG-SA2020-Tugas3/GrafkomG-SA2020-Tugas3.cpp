@@ -14,10 +14,9 @@ void keyboardDown(ub key, int mouseX, int mouseY)
 	system("cls");
 	std::cout << key << " " << std::endl;
 }
-void keyboardUp(ub key,int state, int mouseX, int mouseY)
+void keyboardUp(ub key, int mouseX, int mouseY)
 {
-	system("cls");
-	std::cout << key << state << std::endl;
+	std::cout << key << " " << std::endl;
 }
 void mouseMovement(int x, int y) {
 	system("cls");
@@ -25,7 +24,7 @@ void mouseMovement(int x, int y) {
 }
 void mouse(int xbutton, int ystate, int x, int y) {
 	system("cls");
-	std::cout << "mouseX:" << x << " " << y << "mouseY:" << std::endl;
+	std::cout << "mouseX:" << x << " | " << "mouseY:" << y << std::endl;
 }
 
 int main(int argc, char** argv) {
