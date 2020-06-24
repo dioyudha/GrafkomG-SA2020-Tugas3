@@ -8,45 +8,46 @@ void render(void)
 {
 
 }
-void keyboardDown(unsigned char key, int X, int Y)
+
+void keyboardDown(unsigned char button, int X, int Y)
 {
-	
-	std::cout << key;
-	key = array;
-	std::cout << array;
-	glutPostRedisplay();
+
+	std::cout << button << array ;
 
 }
+
 void keyboardUp(unsigned char key, int X, int Y)
 {
-	
+
 	std::cout << key << std::endl;
 	glutPostRedisplay();
 	system("cls");
+}
+
+void mouseMovement(int x, int y) {
+
+	system("cls");
+	std::cout << "mouseX:  " << x << " | " << "mouseY:  " << y << std::endl;
 
 }
-void mouseMovement(int x, int y) {
+
+void mouseUp(int button, int state, int x, int y) {
+
 	system("cls");
 	std::cout << "mouseX: " << x << " | " << "mouseY: " << y << std::endl;
-	glutPostRedisplay();
-}
-void myMouse(int button, int state, int x, int y) {
-	system("cls");
-	std::cout << "mouseX:" << x << " | " << "mouseY:" << y << std::endl;
-	glutPostRedisplay();
-}
 
+}
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_MULTISAMPLE); 
 	glutInitWindowSize(100, 100);
 	glutInitWindowPosition(600, 300);
-	glutCreateWindow(argv[0]);
+	glutCreateWindow("Dio Yudha Perdana 672018165");
 	glutDisplayFunc(render);
 
 	glutMotionFunc(mouseMovement);
-	glutMouseFunc(myMouse);
+	glutMouseFunc(mouseUp);
 	glutKeyboardFunc(keyboardDown);
 	glutKeyboardUpFunc(keyboardUp);
 
