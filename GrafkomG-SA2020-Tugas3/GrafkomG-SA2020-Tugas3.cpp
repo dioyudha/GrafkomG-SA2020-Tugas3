@@ -12,14 +12,14 @@ void render(void)
 void keyboardDown(unsigned char button, int X, int Y)
 {
 
-	std::cout << button << array ;
+	std::cout << button << array;
 
 }
 
-void keyboardUp(unsigned char key, int X, int Y)
+void keyboardUp(unsigned char button, int X, int Y)
 {
 
-	std::cout << key << std::endl;
+	std::cout << button << std::endl;
 	glutPostRedisplay();
 	system("cls");
 }
@@ -40,7 +40,7 @@ void mouseUp(int button, int state, int x, int y) {
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_MULTISAMPLE); 
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_MULTISAMPLE);
 	glutInitWindowSize(100, 100);
 	glutInitWindowPosition(600, 300);
 	glutCreateWindow("Dio Yudha Perdana 672018165");
